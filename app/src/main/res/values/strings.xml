@@ -1,0 +1,6 @@
+<resources>
+  <string name="app_name">Color Movies</string>
+  <string name="new_movie">NEW MOVIE</string>
+  <string name="instructions">Press the Button for a Moview Review</string>
+  <string name="api_error">Problems getting reviews</string>
+</resources>
