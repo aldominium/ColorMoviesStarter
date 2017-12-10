@@ -4,7 +4,7 @@ This is the starter project for my tryout at Raywenderlich.com
 
 Note:
 
-This project requires an API Key from the "Moview Reviews API" from the NYTimes.
+This project requires an API Key from the "Moview Reviews API" of the NYTimes.
 
 Please get one for free here:
 
