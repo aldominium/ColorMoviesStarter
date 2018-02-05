@@ -28,25 +28,13 @@
  * THE SOFTWARE.
  */
 
-package aldominium.com.colormovies.service
+package com.raywenderlich.colormovies.service
 
-import aldominium.com.colormovies.models.MovieResponse
+import com.raywenderlich.colormovies.models.MovieResponse
 import retrofit2.Call
-import retrofit2.Retrofit
-import retrofit2.converter.moshi.MoshiConverterFactory
+import retrofit2.http.GET
 
-object NYTimesReviews {
-  private val service: NYTimesApi
-  private val baseURL = "https://api.nytimes.com/svc/movies/v2/reviews/search.json/"
-
-  init {
-    val retrofit = Retrofit.Builder()
-        .baseUrl(baseURL)
-        .addConverterFactory(MoshiConverterFactory.create())
-        .build()
-
-    service = retrofit.create(NYTimesApi::class.java)
-  }
-
-  fun getReviews(): Call<MovieResponse> = service.getReviews()
+interface NYTimesApi {
+  @GET("svc/movies/v2/reviews/search.json?api-key=<key>")
+  fun getReviews(): Call<MovieResponse>
 }

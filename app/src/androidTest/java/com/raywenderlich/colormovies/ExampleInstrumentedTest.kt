@@ -1,4 +1,4 @@
-package aldominium.com.colormovies
+package com.raywenderlich.colormovies
 
 import android.support.test.InstrumentationRegistry
 import android.support.test.runner.AndroidJUnit4

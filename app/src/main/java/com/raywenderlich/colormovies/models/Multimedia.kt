@@ -28,13 +28,9 @@
  * THE SOFTWARE.
  */
 
-package aldominium.com.colormovies.service
+package com.raywenderlich.colormovies.models
 
-import aldominium.com.colormovies.models.MovieResponse
-import retrofit2.Call
-import retrofit2.http.GET
-
-interface NYTimesApi {
-  @GET("svc/movies/v2/reviews/search.json?api-key=<key>")
-  fun getReviews(): Call<MovieResponse>
-}
+data class Multimedia(val type: String,
+                      val src: String,
+                      val width: String,
+                      val height: String)

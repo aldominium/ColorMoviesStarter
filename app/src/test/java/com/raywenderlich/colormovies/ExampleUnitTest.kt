@@ -1,4 +1,4 @@
-package aldominium.com.colormovies
+package com.raywenderlich.colormovies
 
 import org.junit.Test
 

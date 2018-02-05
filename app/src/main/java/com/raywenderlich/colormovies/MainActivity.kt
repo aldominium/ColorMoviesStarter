@@ -28,11 +28,11 @@
  * THE SOFTWARE.
  */
 
-package aldominium.com.colormovies
+package com.raywenderlich.colormovies
 
-import aldominium.com.colormovies.models.MovieResponse
-import aldominium.com.colormovies.models.Review
-import aldominium.com.colormovies.service.NYTimesReviews
+import com.raywenderlich.colormovies.models.MovieResponse
+import com.raywenderlich.colormovies.models.Review
+import com.raywenderlich.colormovies.service.NYTimesReviews
 import android.os.Bundle
 import android.support.design.widget.Snackbar
 import android.support.v7.app.AppCompatActivity

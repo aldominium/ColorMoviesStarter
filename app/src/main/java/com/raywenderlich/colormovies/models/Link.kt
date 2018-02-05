@@ -28,17 +28,8 @@
  * THE SOFTWARE.
  */
 
-package aldominium.com.colormovies
+package com.raywenderlich.colormovies.models
 
-import aldominium.com.colormovies.models.MovieResponse
-import aldominium.com.colormovies.models.Review
-import org.json.JSONArray
-import org.json.JSONObject
-
-fun IntArray.getRandomElement(): Int = get((Math.random() * size).toInt())
-
-fun JSONArray.getRandomElement(): JSONObject = getJSONObject((Math.random() * 20).toInt())
-
-fun <T> Array<T>.getRandomElement(): T = this[(Math.random() * size).toInt()]
-
-fun MovieResponse.getRandomElement(): Review = results[(Math.random() * results.size).toInt()]
+data class Link(val type: String,
+                val url: String,
+                val suggested_link_text: String)

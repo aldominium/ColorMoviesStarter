@@ -28,9 +28,10 @@
  * THE SOFTWARE.
  */
 
-package aldominium.com.colormovies.models
+package com.raywenderlich.colormovies.models
 
-data class Multimedia(val type: String,
-                      val src: String,
-                      val width: String,
-                      val height: String)
+data class MovieResponse(val status: String,
+                         val copyright: String,
+                         val has_more: Boolean,
+                         val num_results: Int,
+                         val results: List<Review>)

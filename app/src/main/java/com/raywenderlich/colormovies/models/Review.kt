@@ -28,8 +28,16 @@
  * THE SOFTWARE.
  */
 
-package aldominium.com.colormovies.models
+package com.raywenderlich.colormovies.models
 
-data class Link(val type: String,
-                val url: String,
-                val suggested_link_text: String)
+data class Review(val display_title: String,
+                  val mpaa_rating: String,
+                  val critics_pick: Int,
+                  val byline: String,
+                  val headline: String,
+                  val summary_short: String,
+                  val publication_date: String,
+                  val opening_date: String,
+                  val date_updated: String,
+                  val link: Link,
+                  val multimedia: Multimedia)

@@ -11,7 +11,7 @@ ext {
 android {
     compileSdkVersion 26
     defaultConfig {
-        applicationId "aldominium.com.colormovies"
+        applicationId "com.raywenderlich.colormovies"
         minSdkVersion 21
         targetSdkVersion 26
         versionCode 1
